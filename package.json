@@ -18,7 +18,10 @@
   },
   "dependencies": {
     "react": "16.3.1",
-    "react-native": "0.55.4"
+    "react-native": "0.55.4",
+    "react-native-canvas": "^0.1.32",
+    "react-native-image-crop-picker": "^0.23.1",
+    "react-native-image-picker": "^0.28.1"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
