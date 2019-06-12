@@ -29,7 +29,7 @@ Taro 原生 React Native 壳子
 
 如果编译没有报错，会自动打开一个终端，并在 8081 端口启动 [Metro](https://github.com/facebook/metro) Bundler 负责打包 jsbundle：
 
-![image](https://user-images.githubusercontent.com/9441951/54654650-d1484f80-4af9-11e9-87df-96252b9af0e4.png)
+![image](https://user-images.githubusercontent.com/9441951/59322399-85780180-8d08-11e9-9ea7-b3e4b23c077c.png)
 
 这时，在浏览器输入 http://127.0.0.1:8081，可以看到如下页面：
 
