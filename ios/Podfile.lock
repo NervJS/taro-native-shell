@@ -1,10 +1,13 @@
 PODS:
   - boost-for-react-native (1.63.0)
-  - DoubleConversion (1.1.6)
+  - DoubleConversion (1.1.5)
   - EXConstants (4.0.0):
     - UMConstantsInterface
     - UMCore
   - EXFileSystem (4.0.0):
+    - UMCore
+    - UMFileSystemInterface
+  - EXImagePicker (5.0.2):
     - UMCore
     - UMFileSystemInterface
   - EXLocation (4.0.0):
@@ -14,57 +17,55 @@ PODS:
   - EXPermissions (4.0.0):
     - UMCore
     - UMPermissionsInterface
-  - Folly (2018.10.22.00):
+  - Folly (2016.09.26.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
-  - glog (0.3.5)
-  - React (0.58.6):
-    - React/Core (= 0.58.6)
-  - React/Core (0.58.6):
-    - yoga (= 0.58.6.React)
-  - React/CxxBridge (0.58.6):
-    - Folly (= 2018.10.22.00)
+  - glog (0.3.4)
+  - React (0.55.4):
+    - React/Core (= 0.55.4)
+  - React/Core (0.55.4):
+    - yoga (= 0.55.4.React)
+  - React/CxxBridge (0.55.4):
+    - Folly (= 2016.09.26.00)
     - React/Core
     - React/cxxreact
-    - React/jsiexecutor
-  - React/cxxreact (0.58.6):
+  - React/cxxreact (0.55.4):
     - boost-for-react-native (= 1.63.0)
-    - Folly (= 2018.10.22.00)
+    - Folly (= 2016.09.26.00)
+    - React/jschelpers
     - React/jsinspector
-  - React/DevSupport (0.58.6):
+  - React/DevSupport (0.55.4):
     - React/Core
     - React/RCTWebSocket
-  - React/fishhook (0.58.6)
-  - React/jsi (0.58.6):
-    - Folly (= 2018.10.22.00)
-  - React/jsiexecutor (0.58.6):
-    - Folly (= 2018.10.22.00)
-    - React/cxxreact
-    - React/jsi
-  - React/jsinspector (0.58.6)
-  - React/RCTActionSheet (0.58.6):
+  - React/fishhook (0.55.4)
+  - React/jschelpers (0.55.4):
+    - Folly (= 2016.09.26.00)
+    - React/PrivateDatabase
+  - React/jsinspector (0.55.4)
+  - React/PrivateDatabase (0.55.4)
+  - React/RCTActionSheet (0.55.4):
     - React/Core
-  - React/RCTAnimation (0.58.6):
+  - React/RCTAnimation (0.55.4):
     - React/Core
-  - React/RCTBlob (0.58.6):
+  - React/RCTBlob (0.55.4):
     - React/Core
-  - React/RCTGeolocation (0.58.6):
+  - React/RCTGeolocation (0.55.4):
     - React/Core
-  - React/RCTImage (0.58.6):
+  - React/RCTImage (0.55.4):
     - React/Core
     - React/RCTNetwork
-  - React/RCTLinkingIOS (0.58.6):
+  - React/RCTLinkingIOS (0.55.4):
     - React/Core
-  - React/RCTNetwork (0.58.6):
+  - React/RCTNetwork (0.55.4):
     - React/Core
-  - React/RCTSettings (0.58.6):
+  - React/RCTSettings (0.55.4):
     - React/Core
-  - React/RCTText (0.58.6):
+  - React/RCTText (0.55.4):
     - React/Core
-  - React/RCTVibration (0.58.6):
+  - React/RCTVibration (0.55.4):
     - React/Core
-  - React/RCTWebSocket (0.58.6):
+  - React/RCTWebSocket (0.55.4):
     - React/Core
     - React/fishhook
     - React/RCTBlob
@@ -83,12 +84,13 @@ PODS:
     - UMFontInterface
   - UMSensorsInterface (1.0.0)
   - UMTaskManagerInterface (1.0.0)
-  - yoga (0.58.6.React)
+  - yoga (0.55.4.React)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
+  - EXImagePicker (from `../node_modules/expo-image-picker/ios`)
   - EXLocation (from `../node_modules/expo-location/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -132,6 +134,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-constants/ios"
   EXFileSystem:
     :path: "../node_modules/expo-file-system/ios"
+  EXImagePicker:
+    :path: "../node_modules/expo-image-picker/ios"
   EXLocation:
     :path: "../node_modules/expo-location/ios"
   EXPermissions:
@@ -171,14 +175,15 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
+  DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
   EXConstants: 6ad60de0802ba69068b6d7b63e4e82c06d6807a4
   EXFileSystem: 22a53ba7e31987166aca49778e53cce8181b1ad8
+  EXImagePicker: c1e82c03343a78de696daa6e314b0542746b6270
   EXLocation: 429443e5368923b236cd726d1c40ee8d291eedbc
   EXPermissions: 332e6241b48d34a8363a78d87d90a20436a9eff9
-  Folly: de497beb10f102453a1afa9edbf8cf8a251890de
-  glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  React: 16c4fb7ce3fc30c041bce809ceae33bf57e7c142
+  Folly: 211775e49d8da0ca658aebc8eab89d642935755c
+  glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
+  React: aa2040dbb6f317b95314968021bd2888816e03d5
   UMBarCodeScannerInterface: f623227f2f6e8fa5c45fef1cc2b5ae200dd14918
   UMCameraInterface: 2a22ae5a2d4f710d617e3fd2c5c0511019aea1c7
   UMConstantsInterface: 9884d2a4a4563b20d7efbafba421151698dd8991
@@ -191,8 +196,8 @@ SPEC CHECKSUMS:
   UMReactNativeAdapter: b5ea1cc455cdb00114f6922d17bb64ca770a421f
   UMSensorsInterface: 4b16dad6584fc08d11b10a3a45490034cd5ff37f
   UMTaskManagerInterface: c594f1584e28026f98cca344d10183f635896094
-  yoga: 0885622311729a02c2bc02dca97167787a51488b
+  yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
 
-PODFILE CHECKSUM: eaa714d5576e4eba8be9d56cd9106a95f16dcab1
+PODFILE CHECKSUM: e157246ff33790f02d3af297f7c2143e1df4733a
 
 COCOAPODS: 1.5.3

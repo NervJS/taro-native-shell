@@ -28,6 +28,7 @@ target 'taroDemo' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   pod 'EXLocation', path: '../node_modules/expo-location/ios'
+  pod 'EXImagePicker', path: '../node_modules/expo-image-picker/ios'
 
   use_unimodules!
 
