@@ -17,6 +17,9 @@ PODS:
   - EXPermissions (4.0.0):
     - UMCore
     - UMPermissionsInterface
+  - EXSensors (5.0.1):
+    - UMCore
+    - UMSensorsInterface
   - Folly (2016.09.26.00):
     - boost-for-react-native
     - DoubleConversion
@@ -93,6 +96,7 @@ DEPENDENCIES:
   - EXImagePicker (from `../node_modules/expo-image-picker/ios`)
   - EXLocation (from `../node_modules/expo-location/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
+  - EXSensors (from `../node_modules/expo-sensors/ios`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - React/Core (from `../node_modules/react-native`)
@@ -140,6 +144,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-location/ios"
   EXPermissions:
     :path: "../node_modules/expo-permissions/ios"
+  EXSensors:
+    :path: "../node_modules/expo-sensors/ios"
   Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
@@ -181,6 +187,7 @@ SPEC CHECKSUMS:
   EXImagePicker: c1e82c03343a78de696daa6e314b0542746b6270
   EXLocation: 429443e5368923b236cd726d1c40ee8d291eedbc
   EXPermissions: 332e6241b48d34a8363a78d87d90a20436a9eff9
+  EXSensors: 70818ebc1f2a0014d95556de323e2945c4374ad9
   Folly: 211775e49d8da0ca658aebc8eab89d642935755c
   glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
   React: aa2040dbb6f317b95314968021bd2888816e03d5
@@ -198,6 +205,6 @@ SPEC CHECKSUMS:
   UMTaskManagerInterface: c594f1584e28026f98cca344d10183f635896094
   yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
 
-PODFILE CHECKSUM: e157246ff33790f02d3af297f7c2143e1df4733a
+PODFILE CHECKSUM: 61576f18e91c51606cfdbc32b2902bfec85ddf4d
 
 COCOAPODS: 1.5.3
