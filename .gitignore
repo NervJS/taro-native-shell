@@ -86,6 +86,7 @@ lint/tmp/
 ## Build generated
 build/
 DerivedData/
+Pods
 
 ## Various settings
 *.pbxuser
