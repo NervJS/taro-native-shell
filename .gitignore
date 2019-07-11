@@ -146,6 +146,7 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+ios/Pods
 dist
 node_modules
 .cache
