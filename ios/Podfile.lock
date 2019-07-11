@@ -14,7 +14,7 @@ PODS:
   - EXImagePicker (5.0.2):
     - UMCore
     - UMFileSystemInterface
-  - EXLocation (4.0.0):
+  - EXLocation (5.0.1):
     - UMCore
     - UMPermissionsInterface
     - UMTaskManagerInterface
