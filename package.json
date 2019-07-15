@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "expo-av": "^5.0.2",
+    "expo-brightness": "^5.0.1",
     "expo-image-picker": "^5.0.2",
     "expo-location": "^5.0.1",
     "expo-sensors": "^5.0.1",

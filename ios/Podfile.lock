@@ -5,6 +5,8 @@ PODS:
   - EXAV (5.0.2):
     - UMCore
     - UMPermissionsInterface
+  - EXBrightness (5.0.1):
+    - UMCore
   - EXConstants (5.0.1):
     - UMConstantsInterface
     - UMCore
@@ -97,6 +99,7 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXAppLoaderProvider (from `../node_modules/expo-app-loader-provider/ios`)
   - EXAV (from `../node_modules/expo-av/ios`)
+  - EXBrightness (from `../node_modules/expo-brightness/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
   - EXImagePicker (from `../node_modules/expo-image-picker/ios`)
@@ -146,6 +149,9 @@ EXTERNAL SOURCES:
   EXAV:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-av/ios"
+  EXBrightness:
+    :path: !ruby/object:Pathname
+    path: "../node_modules/expo-brightness/ios"
   EXConstants:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-constants/ios"
@@ -214,6 +220,7 @@ SPEC CHECKSUMS:
   DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
   EXAppLoaderProvider: 2638ca3d779c8baae37e63352c785e5e2dad70d5
   EXAV: 619ea1c25404bdbf66ae243d2b77aa4f90ad5cc9
+  EXBrightness: 1bd1960d1d9752af53b9c55b813d3720b12f6cce
   EXConstants: 6ad60de0802ba69068b6d7b63e4e82c06d6807a4
   EXFileSystem: 22a53ba7e31987166aca49778e53cce8181b1ad8
   EXImagePicker: c1e82c03343a78de696daa6e314b0542746b6270
