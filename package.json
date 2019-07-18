@@ -27,6 +27,7 @@
     "react-native-canvas": "^0.1.32",
     "react-native-image-crop-picker": "^0.23.1",
     "react-native-image-picker": "^0.28.1",
+    "react-native-maps": "^0.25.0",
     "react-native-unimodules": "^0.4.1"
   },
   "devDependencies": {

@@ -27,6 +27,9 @@ target 'taroDemo' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+   # react-native-maps dependencies
+   pod 'react-native-maps', path:'../node_modules/react-native-maps'
+
   use_unimodules!
 
   target 'taroDemoTests' do
