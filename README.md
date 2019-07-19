@@ -71,6 +71,15 @@ git clone git@github.com:NervJS/taro-native-shell.git
 ```
 
 ### iOS
+### 安装依赖
+在 iOS 目录运行
+```sh
+$ pod install 
+```
+如果没有安装 CocoaPods，可以参考官方文档：[Getting Started
+](https://guides.cocoapods.org/using/getting-started.html)
+
+
 #### 使用 React Native 命令启动
 
 ```sh
