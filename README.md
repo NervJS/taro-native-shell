@@ -1,6 +1,13 @@
 # taro-native-shell
 Taro 原生 React Native 壳子
 
+## 现有问题
+### 安卓应用闪退并报错：java.lang.NoSuchMethodError: No static method loadLibrary(Ljava/lang/String;)V in class Lcom/facebook/soloader/SoLoader; or its super classes
+参考：https://github.com/NervJS/taro-native-shell/issues/4
+
+### iOS 报错：_reactNative.UIManager.getViewManagerConfig is not a function
+参考：https://github.com/NervJS/taro-native-shell/issues/6
+
 ## 启动代码编译及 Metro Bundler Server
 
 运行 `taro build` 命令，Taro 将会开始编译文件：
