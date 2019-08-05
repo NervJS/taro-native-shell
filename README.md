@@ -8,6 +8,9 @@ Taro 原生 React Native 壳子
 ### iOS 报错：_reactNative.UIManager.getViewManagerConfig is not a function
 参考：https://github.com/NervJS/taro-native-shell/issues/6
 
+### react-native 在新版 Xcode（10+）中运行出现的常见问题
+参考这里：https://github.com/NervJS/taro/issues/3572
+
 ## 启动代码编译及 Metro Bundler Server
 
 运行 `taro build` 命令，Taro 将会开始编译文件：
