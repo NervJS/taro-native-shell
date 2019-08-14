@@ -28,7 +28,7 @@
     "react-native-image-crop-picker": "^0.23.1",
     "react-native-image-picker": "^0.28.1",
     "react-native-maps": "^0.25.0",
-    "react-native-unimodules": "^0.4.1"
+    "react-native-unimodules": "^0.5.3"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
