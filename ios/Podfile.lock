@@ -1,29 +1,29 @@
 PODS:
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.5)
-  - EXAppLoaderProvider (5.0.1)
-  - EXAV (5.0.2):
+  - EXAppLoaderProvider (6.0.0)
+  - EXAV (6.0.0):
     - UMCore
     - UMPermissionsInterface
-  - EXBrightness (5.0.1):
+  - EXBrightness (6.0.0):
     - UMCore
-  - EXConstants (5.0.1):
+  - EXConstants (6.0.0):
     - UMConstantsInterface
     - UMCore
-  - EXFileSystem (5.0.1):
+  - EXFileSystem (6.0.2):
     - UMCore
     - UMFileSystemInterface
-  - EXImagePicker (5.0.2):
+  - EXImagePicker (6.0.0):
     - UMCore
     - UMFileSystemInterface
-  - EXLocation (5.0.1):
+  - EXLocation (6.0.0):
     - UMCore
     - UMPermissionsInterface
     - UMTaskManagerInterface
-  - EXPermissions (5.0.1):
+  - EXPermissions (6.0.0):
     - UMCore
     - UMPermissionsInterface
-  - EXSensors (5.0.1):
+  - EXSensors (6.0.0):
     - UMCore
     - UMSensorsInterface
   - Folly (2016.09.26.00):
@@ -80,21 +80,21 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - UMBarCodeScannerInterface (2.0.1)
-  - UMCameraInterface (2.0.1)
-  - UMConstantsInterface (2.0.1)
-  - UMCore (2.0.1)
-  - UMFaceDetectorInterface (2.0.1)
-  - UMFileSystemInterface (2.0.1)
-  - UMFontInterface (2.0.1)
-  - UMImageLoaderInterface (2.0.1)
-  - UMPermissionsInterface (2.0.1)
-  - UMReactNativeAdapter (2.0.1):
+  - UMBarCodeScannerInterface (3.0.0)
+  - UMCameraInterface (3.0.0)
+  - UMConstantsInterface (3.0.0)
+  - UMCore (3.0.2)
+  - UMFaceDetectorInterface (3.0.0)
+  - UMFileSystemInterface (3.0.0)
+  - UMFontInterface (3.0.0)
+  - UMImageLoaderInterface (3.0.0)
+  - UMPermissionsInterface (3.0.0)
+  - UMReactNativeAdapter (3.0.0):
     - React
     - UMCore
     - UMFontInterface
-  - UMSensorsInterface (2.0.1)
-  - UMTaskManagerInterface (2.0.1)
+  - UMSensorsInterface (3.0.0)
+  - UMTaskManagerInterface (3.0.0)
   - yoga (0.55.4.React)
 
 DEPENDENCIES:
@@ -247,7 +247,7 @@ SPEC CHECKSUMS:
   UMPermissionsInterface: 2a4e59492eb0a32410af28dff8d498ea4030deaf
   UMReactNativeAdapter: b5ea1cc455cdb00114f6922d17bb64ca770a421f
   UMSensorsInterface: 4b16dad6584fc08d11b10a3a45490034cd5ff37f
-  UMTaskManagerInterface: c594f1584e28026f98cca344d10183f635896094
+  UMTaskManagerInterface: 739ea05d5ee490f5befe35201fb683eb9a1fc4b8
   yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
 
 PODFILE CHECKSUM: 9591d149288878b058f1a19c9aa181fce630ff3e
