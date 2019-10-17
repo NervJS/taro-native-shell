@@ -17,11 +17,11 @@
     }
   },
   "dependencies": {
-    "expo-av": "^5.0.2",
-    "expo-brightness": "^5.0.1",
-    "expo-image-picker": "^5.0.2",
-    "expo-location": "^5.0.1",
-    "expo-sensors": "^5.0.1",
+    "expo-av": "^6.0.0",
+    "expo-brightness": "^^6.0.0",
+    "expo-image-picker": "^6.0.0",
+    "expo-location": "^6.0.0",
+    "expo-sensors": "^6.0.0",
     "react": "16.3.1",
     "react-native": "0.55.4",
     "react-native-canvas": "^0.1.32",
