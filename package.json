@@ -9,7 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NervJS/taro-native-shell.git"
+    "url": "git+https://github.com/NervJS/taro-native-shell.git",
+    "postinstall":"cd ./node_modules/react-native/third-party/glog-0.3.4 && ../../scripts/ios-configure-glog.sh"
   },
   "husky": {
     "hooks": {
