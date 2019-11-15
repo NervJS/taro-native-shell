@@ -6,6 +6,10 @@ Taro 原生 React Native 壳子
 
 参考：https://github.com/NervJS/taro-native-shell/issues/4
 
+`react-native run-android` 的时候提示红字：找不到index.android.bundle；
+
+保证在手机电脑在同一局域网，然后运行一下：`adb reverse tcp:8081 tcp:8081`，然后重新运行。
+
 - iOS 报错：_reactNative.UIManager.getViewManagerConfig is not a function
 
 参考：https://github.com/NervJS/taro-native-shell/issues/6
