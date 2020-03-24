@@ -1,3 +1,5 @@
+> master 分支是的 RN 依赖是 0.55.4，如果是 Taro 2.0+ （RN 依赖升级为 0.59.9），请使用 0.59.9 分支。
+
 # taro-native-shell
 Taro 原生 React Native 壳子
 
