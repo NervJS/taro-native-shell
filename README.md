@@ -2,9 +2,17 @@
 > master 分支是的 RN 依赖是 0.55.4，如果是 Taro 2.0+ （RN 依赖升级为 0.59.9），请使用 0.59.9 分支。
 
 # taro-native-shell
-Taro 原生 React Native 壳子
+Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，移除了 index.js，集成了 [react-native-unimodules](https://github.com/unimodules/react-native-unimodules)。
+
+如已有原生项目，需自行集成，请参考 [react-native-unimodules](https://github.com/unimodules/react-native-unimodules) Readme。
 
 ## 现有问题
+
+- 部分应用对包大敏感，觉得集成 [react-native-unimodules](https://github.com/unimodules/react-native-unimodules) 后包大小增加太多。
+可以通过配置 exclude 您不需要的包：`use_unimodules!(exclude: [‘expo-face-detector’])` 或 `addUnimodulesDependencies([exclude: ['expo-face-detector']])`
+
+具体可以参考：[Reducing App Size In Future?](https://forums.expo.io/t/reducing-app-size-in-future/32231)
+
 - 安卓应用闪退并报错：java.lang.NoSuchMethodError: No static method loadLibrary(Ljava/lang/String;)V in class Lcom/facebook/soloader/SoLoader; or its super classes
 
 参考：https://github.com/NervJS/taro-native-shell/issues/4
