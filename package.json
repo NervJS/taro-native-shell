@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NervJS/taro-native-shell.git",
-    "postinstall":"cd ./node_modules/react-native/third-party/glog-0.3.4 && ../../scripts/ios-configure-glog.sh"
+    "postinstall": "cd ./node_modules/react-native/third-party/glog-0.3.4 && ../../scripts/ios-configure-glog.sh"
   },
   "husky": {
     "hooks": {
@@ -29,7 +29,8 @@
     "react-native-image-crop-picker": "^0.23.1",
     "react-native-image-picker": "^0.28.1",
     "react-native-maps": "^0.25.0",
-    "react-native-unimodules": "^0.5.3"
+    "react-native-unimodules": "^0.5.3",
+    "react-native-webview": "8.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
