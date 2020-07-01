@@ -6,6 +6,8 @@ Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，
 
 如已有原生项目，需自行集成，请参考 [react-native-unimodules](https://github.com/unimodules/react-native-unimodules) Readme。
 
+如果`Taro`代码和原生项目代码的目录结构和`React-Native`官方文档建议的不同，则添加`react-native-unimodules`时请参考现有问题中该问题的做法。
+
 ## 现有问题
 
 - 部分应用对包大敏感，觉得集成 [react-native-unimodules](https://github.com/unimodules/react-native-unimodules) 后包大小增加太多。
@@ -28,6 +30,21 @@ Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，
 - react-native 在新版 Xcode（10+）中运行出现的常见问题
 
 参考：https://github.com/NervJS/taro/issues/3572
+
+- 现有原生项目集成`react-native-unimodules`没成功
+
+如果`Taro`代码和原生项目代码的目录结构和`React-Native`官方文档建议的不同，则添加`react-native-unimodules`并进行`pod install`时，会有以下提示：
+```
+"No unimodules found. Are you sure you've installed JS dependencies before installing pods?"
+```
+并且引入以下头文件不成功，因为模块没被成功导入。
+```
+#import <UMCore/UMModuleRegistry.h>
+#import <UMReactNativeAdapter/UMNativeModulesProxy.h>
+#import <UMReactNativeAdapter/UMModuleRegistryAdapter.h>
+```
+
+此时需要传入`node_modules`路径，即修改`Podfile`文件中的`use_unimodules!()`为`use_unimodules!({modules_paths: ['./xxx/node_modules']})`
 
 ## 启动代码编译及 Metro Bundler Server
 
