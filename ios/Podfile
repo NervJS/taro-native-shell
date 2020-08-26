@@ -34,6 +34,19 @@ target 'taroDemo' do
 
   pod 'react-native-webview', :path => '../node_modules/react-native-webview'
 
+  # fix archive error vs Xcode10+
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      if target.name == "React"
+        target.remove_from_project
+      end
+
+      if target.name == "yoga"
+        target.remove_from_project
+      end
+    end
+  end
+
   target 'taroDemoTests' do
     inherit! :search_paths
   end
