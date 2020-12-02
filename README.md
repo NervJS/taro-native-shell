@@ -19,7 +19,7 @@ Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，
 
 - `react-native run-android` 的时候提示红字：找不到 `index.android.bundle`
 
-保证在手机电脑在同一局域网，然后运行一下：`adb reverse tcp:8080 tcp:8080`，然后重新运行。
+保证在手机电脑在同一局域网，然后运行一下：`adb reverse tcp:8081 tcp:8081`，然后重新运行。
 
 - iOS 报错：_reactNative.UIManager.getViewManagerConfig is not a function
 
@@ -31,16 +31,16 @@ Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，
 
 ## 启动代码编译及 Metro Bundler Server
 
-运行 `taro dev:rn` 命令，Taro 将会开始启动本地Metro Server：
+运行 `taro dev:rn --port 8081` 命令，Taro 将会开始启动本地Metro Server：
 
 ```sh
 ➜  taro-demo git:(master) ✗ taro build --type rn --watch
-👽 Taro v3.0.0
+👽 Taro v3.2.0
 
 ```
 
 
-如果编译没有报错，会自动打开一个终端，并在 8080 端口启动 [Metro](https://github.com/facebook/metro) Bundler 负责打包 jsbundle：
+如果编译没有报错，会自动打开一个终端，并在 8081 端口启动 [Metro](https://github.com/facebook/metro) Bundler 负责打包 jsbundle：
 
 ```sh
 ######                                         #     #
@@ -52,7 +52,7 @@ Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，
   #     #  ######  #    #   ####     #           #     #  #    #    #    #    ##    ######
         
 warning: the transform cache was reset.
-React-Native Dev server is running on port: 8080
+React-Native Dev server is running on port: 8081
 
 ```
 
@@ -60,7 +60,7 @@ React-Native Dev server is running on port: 8080
 
 ![image](https://user-images.githubusercontent.com/9441951/55865494-13245d00-5bb1-11e9-9a97-8a785a83b584.png)
 
-输入 http://127.0.0.1:8080/index.bundle?platform=ios&dev=true 会触发对应终端平台的 js bundle 构建。
+输入 http://127.0.0.1:8081/index.bundle?platform=ios&dev=true 会触发对应终端平台的 js bundle 构建。
 
 ![image](https://user-images.githubusercontent.com/9441951/55865039-37336e80-5bb0-11e9-8aca-c121be4542f6.png)
 
@@ -108,10 +108,10 @@ $ pod install
 #### 使用 React Native 命令启动
 
 ```sh
-$ react-native run-ios
+$ yarn ios
 ```
 
-iOS 模拟器会自行启动，并访问 8080 端口获取 js bundle，这时 Metro Bundler 终端会打印以下内容：
+iOS 模拟器会自行启动，并访问 8081 端口获取 js bundle，这时 Metro Bundler 终端会打印以下内容：
 
 ```sh
  BUNDLE  [ios, dev] ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100.0% (1/1), done.
@@ -161,10 +161,10 @@ app.json 字段的配置默认取自于 package.json 的 name 字段，除非你
 #### 使用 React Native 命令启动
 
 ```sh
-$ react-native run-android
+$ yarn android
 ```
 
-Android 模拟器会自行启动，并访问 8080 端口获取 js bundle，这时 Metro Bundler 终端会打印一下内容：
+Android 模拟器会自行启动，并访问 8081 端口获取 js bundle，这时 Metro Bundler 终端会打印一下内容：
 
 ```sh
  BUNDLE  [android, dev] ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100.0% (1/1), done.
