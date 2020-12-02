@@ -19,7 +19,7 @@ Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，
 
 - `react-native run-android` 的时候提示红字：找不到 `index.android.bundle`
 
-保证在手机电脑在同一局域网，然后运行一下：`adb reverse tcp:8081 tcp:8081`，然后重新运行。
+保证在手机电脑在同一局域网，然后运行一下：`adb reverse tcp:8080 tcp:8080`，然后重新运行。
 
 - iOS 报错：_reactNative.UIManager.getViewManagerConfig is not a function
 
@@ -60,7 +60,7 @@ React-Native Dev server is running on port: 8080
 
 ![image](https://user-images.githubusercontent.com/9441951/55865494-13245d00-5bb1-11e9-9a97-8a785a83b584.png)
 
-输入 http://127.0.0.1:8080/rn_temp/index.bundle?platform=ios&dev=true 会触发对应终端平台的 js bundle 构建。
+输入 http://127.0.0.1:8080/index.bundle?platform=ios&dev=true 会触发对应终端平台的 js bundle 构建。
 
 ![image](https://user-images.githubusercontent.com/9441951/55865039-37336e80-5bb0-11e9-8aca-c121be4542f6.png)
 
@@ -111,7 +111,7 @@ $ pod install
 $ react-native run-ios
 ```
 
-iOS 模拟器会自行启动，并访问 8081 端口获取 js bundle，这时 Metro Bundler 终端会打印以下内容：
+iOS 模拟器会自行启动，并访问 8080 端口获取 js bundle，这时 Metro Bundler 终端会打印以下内容：
 
 ```sh
  BUNDLE  [ios, dev] ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100.0% (1/1), done.
@@ -122,28 +122,29 @@ iOS 的启动比较简单，使用 Xcode 打开 ios 目录，然后点击 Run �
 
 ![image](https://developer.apple.com/library/archive/documentation/ToolsLanguages/Conceptual/Xcode_Overview/Art/XC_O_SchemeMenuWithCallouts_2x.png)
 
-这里需要注意的是 jsBundle 的 moduleName，默认的 moduleName 为 "taroDemo"，需要和 `rn_temp/app.json` 里面的 name 字段保持一致。该配置在 `AppDelegate.m` 文件中。
+这里需要注意的是 jsBundle 的 moduleName，默认的 moduleName 为 "taroDemo"，需要和 `config/index.js` 里的 rn.appName 字段保持一致。该配置在 `AppDelegate.m` 文件中。
 
 ```objc
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  NSURL *jsCodeLocation;
 
-  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"rn_temp/index" fallbackResource:nil];
+  self.moduleRegistryAdapter = [[UMModuleRegistryAdapter alloc] initWithModuleRegistryProvider:[[UMModuleRegistryProvider alloc] init]];
 
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"taroDemo"
-                                               initialProperties:nil
-                                                   launchOptions:launchOptions];
-  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-
-  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  UIViewController *rootViewController = [UIViewController new];
-  rootViewController.view = rootView;
-  self.window.rootViewController = rootViewController;
-  [self.window makeKeyAndVisible];
+  RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
+                                                    moduleName:@"taroDemo"
+                                             initialProperties:nil];
+ 
+   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+ 
+   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+   UIViewController *rootViewController = [UIViewController new];
+   rootViewController.view = rootView;
+   self.window.rootViewController = rootViewController;
+   [self.window makeKeyAndVisible];
+   [super application:application didFinishLaunchingWithOptions:launchOptions];
   return YES;
 }
 
@@ -163,7 +164,7 @@ app.json 字段的配置默认取自于 package.json 的 name 字段，除非你
 $ react-native run-android
 ```
 
-Android 模拟器会自行启动，并访问 8081 端口获取 js bundle，这时 Metro Bundler 终端会打印一下内容：
+Android 模拟器会自行启动，并访问 8080 端口获取 js bundle，这时 Metro Bundler 终端会打印一下内容：
 
 ```sh
  BUNDLE  [android, dev] ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100.0% (1/1), done.
