@@ -1211,6 +1211,11 @@
   resolved "https://registry.npm.taobao.org/@react-native-community/slider/download/@react-native-community/slider-3.0.3.tgz#830167fd757ba70ac638747ba3169b2dbae60330"
   integrity sha1-gwFn/XV7pwrGOHR7oxabLbrmAzA=
 
+"@react-native-community/viewpager@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.npm.taobao.org/@react-native-community/viewpager/download/@react-native-community/viewpager-4.2.2.tgz#e05d618829c589284326896c806200af90ae0986"
+  integrity sha1-4F1hiCnFiShDJolsgGIAr5CuCYY=
+
 "@sinonjs/commons@^1", "@sinonjs/commons@^1.6.0", "@sinonjs/commons@^1.7.0", "@sinonjs/commons@^1.8.1":
   version "1.8.1"
   resolved "https://registry.npm.taobao.org/@sinonjs/commons/download/@sinonjs/commons-1.8.1.tgz?cache=0&sync_timestamp=1594974057313&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sinonjs%2Fcommons%2Fdownload%2F%40sinonjs%2Fcommons-1.8.1.tgz#e7df00f98a203324f6dc7cc606cad9d4a8ab2217"
