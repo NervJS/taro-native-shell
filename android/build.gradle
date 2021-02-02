@@ -8,6 +8,9 @@ buildscript {
         targetSdkVersion = 29
     }
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
         google()
         jcenter()
     }
@@ -29,14 +32,15 @@ allprojects {
             // Android JSC is installed from npm
             url("$rootDir/../node_modules/jsc-android/dist")
         }
-
-        google()
-        jcenter()
-        maven { url 'https://www.jitpack.io' }
-
         maven {
             // expo-camera bundles a custom com.google.android:cameraview
             url "$rootDir/../node_modules/expo-camera/android/maven"
         }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://www.jitpack.io' }
+        google()
+        jcenter()
     }
 }
