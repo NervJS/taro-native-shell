@@ -284,6 +284,8 @@ PODS:
   - React-jsinspector (0.63.2)
   - react-native-cameraroll (4.0.1):
     - React
+  - react-native-geolocation (2.0.2):
+    - React
   - react-native-image-resizer (1.4.0):
     - React-Core
   - react-native-netinfo (5.9.7):
@@ -450,6 +452,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - "react-native-cameraroll (from `../node_modules/@react-native-community/cameraroll`)"
+  - "react-native-geolocation (from `../node_modules/@react-native-community/geolocation`)"
   - react-native-image-resizer (from `../node_modules/react-native-image-resizer`)
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -563,6 +566,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-cameraroll:
     :path: "../node_modules/@react-native-community/cameraroll"
+  react-native-geolocation:
+    :path: "../node_modules/@react-native-community/geolocation"
   react-native-image-resizer:
     :path: "../node_modules/react-native-image-resizer"
   react-native-netinfo:
@@ -680,6 +685,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 8ca588cc921e70590820ce72b8789b02c67cce38
   React-jsinspector: b14e62ebe7a66e9231e9581279909f2fc3db6606
   react-native-cameraroll: 60ba0068826eab1c8d43146191bafd4363ea58a7
+  react-native-geolocation: c956aeb136625c23e0dce0467664af2c437888c9
   react-native-image-resizer: 9bb7382bc4faf0e840b088460d6f463b434a4818
   react-native-netinfo: 250dc0ca126512f618a8a2ca6a936577e1f66586
   react-native-safe-area-context: b6e0e284002381d2ff29fa4fff42b4d8282e3c94
@@ -724,4 +730,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: d185722c91167cfff585544147fae78d9c63d350
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
