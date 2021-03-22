@@ -1,6 +1,10 @@
 
 > 目前支持0.60以上的RN版本, 以及Taro3
 
+Taro 2 对应分支：https://github.com/NervJS/taro-native-shell/tree/0.59.9
+
+Taro 1 对应分支：https://github.com/NervJS/taro-native-shell/tree/0.55.4
+
 # taro-native-shell
 Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，移除了 index.js，集成了 [react-native-unimodules](https://github.com/unimodules/react-native-unimodules)。
 
