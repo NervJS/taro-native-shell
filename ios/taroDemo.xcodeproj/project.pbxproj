@@ -160,7 +160,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				B6CB9268306F99E9F86EBD1E /* [CP] Embed Pods Frameworks */,
 				48F1A134ECEEFA8F06CA9A0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -183,7 +182,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				701788BD43D1B08CA088E4A1 /* [CP] Embed Pods Frameworks */,
 				8DBE55EE6E7CABBBF097A5DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -326,23 +324,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taroDemo-taroDemoTests/Pods-taroDemo-taroDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		701788BD43D1B08CA088E4A1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-taroDemo/Pods-taroDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-taroDemo/Pods-taroDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taroDemo/Pods-taroDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8DBE55EE6E7CABBBF097A5DA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,23 +339,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taroDemo/Pods-taroDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B6CB9268306F99E9F86EBD1E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-taroDemo-taroDemoTests/Pods-taroDemo-taroDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-taroDemo-taroDemoTests/Pods-taroDemo-taroDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taroDemo-taroDemoTests/Pods-taroDemo-taroDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
