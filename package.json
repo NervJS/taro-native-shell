@@ -38,7 +38,7 @@
     "react-native-screens": "^2.11.0",
     "react-native-syan-image-picker": "0.4.10",
     "react-native-unimodules": "^0.11.0",
-    "react-native-webview": "^10.10.2"
+    "react-native-webview": "^11.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
