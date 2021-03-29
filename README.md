@@ -1,5 +1,5 @@
 
-> 目前支持0.60以上的RN版本, 以及Taro3
+> 目前支持0.60以上的RN版本, 以及 Taro3 (支持 Taro 3.2.0-beta.4及以上版本，以下版本请使用 0.63.2 版本)
 
 Taro 2 对应分支：https://github.com/NervJS/taro-native-shell/tree/0.59.9
 
