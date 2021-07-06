@@ -12,6 +12,9 @@ Taro 原生 React Native 壳子，和 React Native init 的工程的区别是，
 
 ## 现有问题
 
+- 与 Taro 工程相关原生依赖保持一致。
+执行`yarn upgradePeerdeps`，默认与最新版保持一致，若需要指定版本，请修改`upgradePeerdeps`对应命令。
+
 - 部分应用对包大小敏感，觉得集成 [react-native-unimodules](https://github.com/unimodules/react-native-unimodules) 后包大小增加太多。
 可以通过配置 exclude 您不需要的包：`use_unimodules!(exclude: [‘expo-face-detector’])` 或 `addUnimodulesDependencies([exclude: ['expo-face-detector']])`
 
