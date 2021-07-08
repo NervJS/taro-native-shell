@@ -141,12 +141,15 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.tarodemo"
+        applicationId app_id
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode Integer.parseInt(version_code)
+        versionName version_name
         // vectorDrawables.useSupportLibrary true
+        ndk {
+            abiFilters abi_filters.replaceAll("\\s*", "").split(",")
+        }
     }
     splits {
         abi {
@@ -157,28 +160,34 @@ android {
         }
     }
     signingConfigs {
-        debug {
-            storeFile file('debug.keystore')
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
+        release {
+            storeFile file(keystore_file)
+            storePassword keystore_password
+            keyAlias keystore_key_alias
+            keyPassword keystore_key_password
         }
     }
     buildTypes {
         debug {
-            signingConfig signingConfigs.debug
-			manifestPlaceholders = [
-				usesCleartextTraffic: "true",
-			]
-			extraPermissionsForDebug = ["SYSTEM_ALERT_WINDOW"]
+            signingConfig signingConfigs.release
+            manifestPlaceholders = [
+                    usesCleartextTraffic: "true",
+                    appIcon             : "@mipmap/${app_icon.isEmpty() ? 'ic_launcher' : app_icon}",
+                    appRoundIcon        : "@mipmap/${app_round_icon.isEmpty() ? 'ic_launcher_round' : app_round_icon}"
+            ]
+            extraPermissionsForDebug = ["SYSTEM_ALERT_WINDOW"]
+            resValue 'string', 'app_name', app_name
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-			manifestPlaceholders = [
-				usesCleartextTraffic: "false"
-			]
-            signingConfig signingConfigs.debug
+            manifestPlaceholders = [
+                    usesCleartextTraffic: "false",
+                    appIcon             : "@mipmap/${app_icon.isEmpty() ? 'ic_launcher' : app_icon}",
+                    appRoundIcon        : "@mipmap/${app_round_icon.isEmpty() ? 'ic_launcher_round' : app_round_icon}"
+            ]
+            resValue 'string', 'app_name', app_name
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
@@ -196,6 +205,27 @@ android {
                         defaultConfig.versionCode * 1000 + versionCodes.get(abi)
             }
 
+            // 如果没有指定圆角icon，则将android:roundIcon从AndroidManifest.xml中移除
+            if (app_round_icon.isEmpty()) {
+                println "未指定圆角icon，准备将android:roundIcon从AndroidManifest.xml中移除"
+                def processManifest = output.getProcessManifestProvider().get()
+                processManifest.doLast { task ->
+                    def outputDir = task.getMultiApkManifestOutputDirectory().get().asFile
+                    File outputDirectory
+                    if (outputDir instanceof File) {
+                        outputDirectory = outputDir
+                    } else {
+                        outputDirectory = outputDir.get().asFile
+                    }
+                    File manifestOutFile = file("$outputDirectory/AndroidManifest.xml")
+
+                    if (manifestOutFile.exists() && manifestOutFile.canRead() && manifestOutFile.canWrite()) {
+                        def newManifest = manifestOutFile.getText().replace("android:roundIcon=\"@mipmap/ic_launcher_round\"", "")
+                        manifestOutFile.write(newManifest, 'UTF-8')
+                    }
+                    println "已将android:roundIcon从AndroidManifest.xml中移除"
+                }
+            }
         }
     }
 }
