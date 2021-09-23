@@ -15,7 +15,7 @@ PODS:
   - EXCamera (11.2.2):
     - ExpoModulesCore
     - UMCore
-  - EXConstants (11.0.1):
+  - EXConstants (11.0.2):
     - ExpoModulesCore
     - UMCore
   - EXFileSystem (11.1.3):
@@ -353,8 +353,8 @@ PODS:
     - TZImagePickerController
   - TZImagePickerController (3.6.4)
   - UMAppLoader (2.2.0)
-  - UMCore (7.1.1)
-  - UMReactNativeAdapter (6.3.5):
+  - UMCore (7.1.2)
+  - UMReactNativeAdapter (6.3.7):
     - ExpoModulesCore
     - React-Core
     - UMCore
@@ -570,7 +570,7 @@ SPEC CHECKSUMS:
   EXBarCodeScanner: ea326d0d2f0b84d4fa2fb833d17e28eaff7f831b
   EXBrightness: 8c4fd91c787d05eab082e7efefe8072fd6c715c2
   EXCamera: 042b334f6ee9b918855fe4c4f155d4c372300a5f
-  EXConstants: 3babb61f8f4bb7dffe85b8b7d6eaa31d903e4d7e
+  EXConstants: 4cb52b6d8f636c767104a44bf7db3873e9c01a6f
   EXFileSystem: 0a04aba8da751b9ac954065911bcf166503f8267
   EXImageLoader: d3531a3fe530b22925c19977cb53bb43e3821fe6
   EXImagePicker: 414a3663910fd6604248e84c9c77a0501ae0d18b
@@ -624,8 +624,8 @@ SPEC CHECKSUMS:
   RNSyanImagePicker: aff3afbb646220de319eb00806589b9899b069c9
   TZImagePickerController: 1cc39ec0454d6e94d0397418953164d7aa631719
   UMAppLoader: 21af63390e55c82e037fb9752d93114a80ecf16e
-  UMCore: 2f671796d7439604a1cf8ac7bbe5809cd5c50437
-  UMReactNativeAdapter: f808906d586a16cebdc3844d86e1bdb8f114a873
+  UMCore: ce3a4faa010239063b8343895b29a6d97b01069d
+  UMReactNativeAdapter: bb7922210cf6fdb5768f78685f3c3a2060299119
   UMTaskManagerInterface: 2be431101b73604e64fbfffcf759336f9d8fccbb
   Yoga: aa0cb45287ebe1004c02a13f279c55a95f1572f4
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb

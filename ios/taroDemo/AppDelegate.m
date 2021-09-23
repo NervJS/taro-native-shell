@@ -1,5 +1,14 @@
 #import "AppDelegate.h"
 
+// NEW CODE
+
+// put this condition after AppDelegate.h import
+#if RCT_DEV
+#import <React/RCTDevLoadingView.h>
+#endif
+
+// END
+
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
@@ -44,6 +53,19 @@ static void InitializeFlipper(UIApplication *application) {
   self.moduleRegistryAdapter = [[UMModuleRegistryAdapter alloc] initWithModuleRegistryProvider:[[UMModuleRegistryProvider alloc] init]];
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+
+  // NEW CODE
+
+  // NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.js" fallbackResource:nil];
+
+  // RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:jsCodeLocation
+  //                                             moduleProvider:nil
+  //                                              launchOptions:launchOptions];
+  #if RCT_DEV
+   [bridge moduleForClass:[RCTDevLoadingView class]];
+  #endif
+
+  // END
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"taroDemo"
                                             initialProperties:nil];
