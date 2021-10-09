@@ -263,7 +263,7 @@ PODS:
     - React
   - react-native-image-resizer (1.4.5):
     - React-Core
-  - react-native-netinfo (5.9.10):
+  - react-native-netinfo (6.0.2):
     - React-Core
   - react-native-pager-view (5.4.1):
     - React-Core
@@ -346,6 +346,8 @@ PODS:
     - React
   - RNCPicker (1.16.4):
     - React-Core
+  - RNDeviceInfo (8.4.0):
+    - React-Core
   - RNGestureHandler (1.10.3):
     - React-Core
   - RNReanimated (1.13.2):
@@ -355,7 +357,7 @@ PODS:
   - RNSyanImagePicker (0.4.10):
     - React
     - TZImagePickerController
-  - TZImagePickerController (3.6.4)
+  - TZImagePickerController (3.6.0)
   - UMAppLoader (2.2.0)
   - UMCore (7.1.2)
   - UMReactNativeAdapter (6.3.9):
@@ -428,6 +430,7 @@ DEPENDENCIES:
   - "RNCClipboard (from `../node_modules/@react-native-community/clipboard`)"
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - "RNCPicker (from `../node_modules/@react-native-picker/picker`)"
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
@@ -553,6 +556,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/masked-view"
   RNCPicker:
     :path: "../node_modules/@react-native-picker/picker"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -607,7 +612,7 @@ SPEC CHECKSUMS:
   react-native-cameraroll: c3496682e8296241cb34529706c462b2152506c1
   react-native-geolocation: c956aeb136625c23e0dce0467664af2c437888c9
   react-native-image-resizer: d9fb629a867335bdc13230ac2a58702bb8c8828f
-  react-native-netinfo: 30fb89fa913c342be82a887b56e96be6d71201dd
+  react-native-netinfo: 92e6e4476eb8bf6fc2d7c0a6ca0a1406f663d73a
   react-native-pager-view: 43f51f45f37ec9715f6c188e4af46ccdf79872e8
   react-native-safe-area-context: f0906bf8bc9835ac9a9d3f97e8bde2a997d8da79
   react-native-slider: ae891b9fca8c9b4a99691f6d45731f0ef2bb1866
@@ -628,11 +633,12 @@ SPEC CHECKSUMS:
   RNCClipboard: 41d8d918092ae8e676f18adada19104fa3e68495
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
   RNCPicker: c620feabdfb8b131fc1be42b407be5bacc147fea
+  RNDeviceInfo: 8a06046616c6b5c03787b04f265fa3b52b37c80b
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
   RNScreens: f7ad633b2e0190b77b6a7aab7f914fad6f198d8d
   RNSyanImagePicker: aff3afbb646220de319eb00806589b9899b069c9
-  TZImagePickerController: 1cc39ec0454d6e94d0397418953164d7aa631719
+  TZImagePickerController: a37d7eec87c54436e896a67947033ad2178d498b
   UMAppLoader: 21af63390e55c82e037fb9752d93114a80ecf16e
   UMCore: ce3a4faa010239063b8343895b29a6d97b01069d
   UMReactNativeAdapter: d03cefd0e4e4179ab8c490408589f1c8a6c8b785
