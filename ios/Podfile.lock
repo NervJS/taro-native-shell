@@ -356,7 +356,7 @@ PODS:
     - React-Core
   - RNSVG (12.1.1):
     - React
-  - RNSyanImagePicker (0.4.10):
+  - RNSyanImagePicker (0.5.3):
     - React
     - TZImagePickerController
   - TZImagePickerController (3.6.6)
@@ -584,7 +584,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: a7c83b31436843459a1961bfd74b96033dc77234
-  DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
+  DoubleConversion: cde416483dac037923206447da6e1454df403714
   EXAV: 67bcc1d0afeb1fab854b206c84b9f2afbd61d0cd
   EXBarCodeScanner: ea326d0d2f0b84d4fa2fb833d17e28eaff7f831b
   EXBrightness: 8c4fd91c787d05eab082e7efefe8072fd6c715c2
@@ -601,7 +601,7 @@ SPEC CHECKSUMS:
   FBLazyVector: de148e8310b8b878db304ceea2fec13f2c02e3a0
   FBReactNativeSpec: 6192956c9e346013d5f1809ba049af720b11c6a4
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
-  glog: 5337263514dd6f09803962437687240c5dc39aa4
+  glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
   RCT-Folly: a21c126816d8025b547704b777a2ba552f3d9fa9
   RCTRequired: 59d2b744d8c2bf2d9bc7032a9f654809adcf7d50
   RCTTypeSafety: d0aaf7ccae5c70a4aaa3a5c3e9e0db97efae760e
@@ -643,7 +643,7 @@ SPEC CHECKSUMS:
   RNReanimated: 514a11da3a2bcc6c3dfd9de32b38e2b9bf101926
   RNScreens: f7ad633b2e0190b77b6a7aab7f914fad6f198d8d
   RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
-  RNSyanImagePicker: aff3afbb646220de319eb00806589b9899b069c9
+  RNSyanImagePicker: 5c650d33f16f7cd59c47d9269f6c4856b30d7616
   TZImagePickerController: edf61b8e87f26e3e445aa50eb66254bd7f4859db
   UMAppLoader: 21af63390e55c82e037fb9752d93114a80ecf16e
   UMCore: ce3a4faa010239063b8343895b29a6d97b01069d
