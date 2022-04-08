@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* taroDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* taroDemoTests.m */; };
 		07F5C935D5C2E5DCEDFDE6DD /* libPods-taroDemo-taroDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0975AD63C0115DBB9B3CBB1A /* libPods-taroDemo-taroDemoTests.a */; };
+		0E71153FFD2A3316354237EB /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03BD532320A7795904D693 /* ExpoModulesProvider.swift */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		279FD249E48EB6A611FA9632 /* libPods-taroDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D080531B78B77308EB3DA755 /* libPods-taroDemo.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C24DE7BAD913D241A4B9006F /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984542E76EEA331A9EAFE0B4 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,11 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = taroDemo/main.m; sourceTree = "<group>"; };
 		1815FF863A828443D734E8E6 /* Pods-taroDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taroDemo.release.xcconfig"; path = "Target Support Files/Pods-taroDemo/Pods-taroDemo.release.xcconfig"; sourceTree = "<group>"; };
 		618E49A71BB7628ECF5C445C /* Pods-taroDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taroDemo.debug.xcconfig"; path = "Target Support Files/Pods-taroDemo/Pods-taroDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6C03BD532320A7795904D693 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-taroDemo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		726D0C184EA633DB3F43BB74 /* Pods-taroDemo-taroDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taroDemo-taroDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-taroDemo-taroDemoTests/Pods-taroDemo-taroDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		781280C0B14A16637BD70EE9 /* Pods-taroDemo-taroDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taroDemo-taroDemoTests.release.xcconfig"; path = "Target Support Files/Pods-taroDemo-taroDemoTests/Pods-taroDemo-taroDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = taroDemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		984542E76EEA331A9EAFE0B4 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-taroDemo-taroDemoTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		D080531B78B77308EB3DA755 /* libPods-taroDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-taroDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -133,6 +137,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4CD84E388EE340B862C8FB72 /* Pods */,
+				87837C16E188C4B056871BB0 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +151,31 @@
 				00E356EE1AD99517003FC87E /* taroDemoTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		87837C16E188C4B056871BB0 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				A7BBC0C41D95DDCE2AD47545 /* taroDemo */,
+				B559573405E5FB909E668782 /* taroDemoTests */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		A7BBC0C41D95DDCE2AD47545 /* taroDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C03BD532320A7795904D693 /* ExpoModulesProvider.swift */,
+			);
+			name = taroDemo;
+			sourceTree = "<group>";
+		};
+		B559573405E5FB909E668782 /* taroDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				984542E76EEA331A9EAFE0B4 /* ExpoModulesProvider.swift */,
+			);
+			name = taroDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* taroDemoTests.m in Sources */,
+				C24DE7BAD913D241A4B9006F /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +407,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				0E71153FFD2A3316354237EB /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -598,7 +630,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
