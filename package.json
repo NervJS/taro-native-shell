@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "expo": "^45.0.0",
     "react": "17.0.2",
     "react-native": "0.68.1"
   },
