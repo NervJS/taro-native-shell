@@ -1,0 +1,65 @@
+name: Assemble Android Debug
+
+on:
+  push:
+    tags: [ v*, a* ]
+
+  workflow_dispatch:
+
+env:
+  BUILD_TYPE: debug
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Cache node_modules Folder
+        uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node_modules
+          restore-keys: ${{ runner.os }}-node_modules
+      - name: Get Yarn Cache Directory Path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache Yarn
+        uses: actions/cache@v2
+        env:
+          cache-name: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install Dependencies
+        run: |
+          yarn
+      - name: Cache Gradle
+        uses: actions/cache@v2
+        env:
+          cache-name: gradle-cache
+        with:
+          path: ~/.gradle
+          key: ${{ runner.os }}-gradle
+          restore-keys: |
+            ${{ runner.os }}-gradle
+      - name: Assemble Android ${{ env.BUILD_TYPE }}
+        run: |
+          cd ./android && \
+          ./gradlew assemble${{ env.BUILD_TYPE }}
+      - name: Upload Android Products
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-${{ env.BUILD_TYPE }}
+          path: ${{ github.workspace }}/android/app/build/outputs/apk/${{ env.BUILD_TYPE }}/app-${{ env.BUILD_TYPE }}.apk
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          prerelease: ${{ contains(github.ref, 'beta') }}
+          files: |
+            android/app/build/outputs/apk/${{ env.BUILD_TYPE }}/app-${{ env.BUILD_TYPE }}.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
