@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "react-native run-android --no-packager",
+    "ios": "react-native run-ios --no-packager",
     "start": "react-native start",
     "test": "jest",
+    "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn -o -Y && install-peerdeps @tarojs/components-rn -o -Y && install-peerdeps @tarojs/router-rn -o -Y && pod-install",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -20,8 +21,10 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.32.0",
+    "install-peerdeps": "^3.0.3",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.67.0",
+    "pod-install": "^0.1.35",
     "react-test-renderer": "17.0.2"
   },
   "jest": {
