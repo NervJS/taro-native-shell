@@ -42,3 +42,15 @@ npx install-expo-modules@latest
 yarn
 yarn upgradePeerdeps
 ```
+
+## React Native 小版本更新
+
+https://react-native-community.github.io/upgrade-helper/
+
+## Taro 版本更新
+
+> 使用 Taro 最新版，或者修改 `upgradePeerdeps` 指定 Taro 版本，再执行：
+
+```
+yarn upgradePeerdeps
+```
