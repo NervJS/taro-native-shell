@@ -43,6 +43,10 @@ yarn
 yarn upgradePeerdeps
 ```
 
+5. 添加 Github Actions，此部分可以直接 cherry-pick
+   - [ios] 添加 fastlane 配置
+   - [actions] 添加 Android、iOS 打包脚本
+
 ## React Native 小版本更新
 
 https://react-native-community.github.io/upgrade-helper/
