@@ -43,6 +43,13 @@ yarn
 yarn upgradePeerdeps
 ```
 
+5. 添加打包脚本，此部分可以直接 cherry-pick
+   - [fastlane] 添加 Android、iOS fastlane 配置
+   - [actions] 添加 Android、iOS 打包脚本
+   - [ios] 添加默认图标
+   - [ios] 添加 ITSAppUsesNonExemptEncryption false
+   - [ios] 添加 main.jsbundle assets 引用
+
 ## React Native 小版本更新
 
 https://react-native-community.github.io/upgrade-helper/
