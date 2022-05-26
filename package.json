@@ -114,6 +114,7 @@
     "webpack": "5.69.0"
   },
   "resolutions": {
-    "@babel/traverse": "7.17.9"
+    "@babel/traverse": "7.17.9",
+    "@types/react": "17.0.45"
   }
 }
