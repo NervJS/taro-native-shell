@@ -64,10 +64,6 @@ jobs:
           yarn build:rn --platform ios
       - name: Install pods
         run: cd ios && pod update --no-repo-update
-      - name: Change react-native-xcode.sh
-        run: |
-          cd node_modules/react-native/scripts
-          echo "exit 0;">react-native-xcode.sh
       - name: Import signing certificate
         env:
           SIGNING_CERTIFICATE_P12_DATA: ${{ env.SIGNING_CERTIFICATE_P12_DATA }}
@@ -81,6 +77,7 @@ jobs:
           exec .github/scripts/import-profile.sh
       - name: Build app
         env:
+          SKIP_BUNDLING: 1
           FL_APP_IDENTIFIER: ${{ env.APP_ID }}
           FL_UPDATE_PLIST_DISPLAY_NAME: ${{ env.APP_NAME }}
           FL_UPDATE_PLIST_PATH: taroDemo/Info.plist
