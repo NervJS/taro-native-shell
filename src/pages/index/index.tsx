@@ -29,7 +29,7 @@ export default class Index extends Component {
         <Text>Hello world!!!</Text>
         <Button onClick={this.handleClick}>aaaa</Button>
         <Button onClick={this.handleClick2}>bbbbb</Button>
-        <Video autoplay showPlayBtn={false} src='http://wos.anjukestatic.com/nrlKjIhGnEO/video/4a13605e-d2af-11ec-a27e-4ab7ef9771a0.mp4' />
+        <Video autoplay showPlayBtn={false} src='https://wos.anjukestatic.com/nrlKjIhGnEO/video/4a13605e-d2af-11ec-a27e-4ab7ef9771a0.mp4' />
       </View>
     )
   }
