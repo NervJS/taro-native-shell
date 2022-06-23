@@ -7647,10 +7647,10 @@ react-native-pager-view@~5.4.9:
   resolved "https://registry.yarnpkg.com/react-native-pager-view/-/react-native-pager-view-5.4.15.tgz#075fef5ae4ba6ecc37e49b6c4a24770131a2a3cc"
   integrity sha512-5NssD840wFCuOL4B1ZRiRADvt+Vx2Dgify4SmAUqHXCx03yiGPnRWmFjYXyQeK6gq/8VY+gPGE4bTy9ahzBbDw==
 
-react-native-safe-area-context@~3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.4.1.tgz#c967a52903d55fe010b2428e5368b42f1debc0a7"
-  integrity sha512-xfpVd0CiZR7oBhuwJ2HcZMehg5bjha1Ohu1XHpcT+9ykula0TgovH2BNU0R5Krzf/jBR1LMjR6VabxdlUjqxcA==
+react-native-safe-area-context@~4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.1.4.tgz#c9c0203d24c757645f4e2a884ac663c9b3fd84ed"
+  integrity sha512-y1+UXlqqhKhZQlLanWbF6dJlNBv9kaT/Lem7Luo/Nt2TD/q1A4dbTr0D4zrh5UKT/ykDssopNarsTXccxULzIQ==
 
 react-native-screens@^3.12.0:
   version "3.13.1"
