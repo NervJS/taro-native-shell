@@ -8,6 +8,8 @@
 
 import React from 'react';
 import type {Node} from 'react';
+import TCNProvider from '@tarojs/components-rn/dist/components/Provider';
+import {RootSiblingParent} from 'react-native-root-siblings';
 import {
   SafeAreaView,
   ScrollView,
@@ -17,6 +19,11 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+
+import RichText from './dist/pages/index/components/richText'; // 报错：ReferenceError: Can't find variable: TextEncoder
+// import Textarea from './dist/pages/index/components/textarea'; // 表现不太一样
+// import Webview from './dist/pages/index/components/webview/innerPage/webViewBox'; // 搭配原生？
+// import Accelerometer from './dist/pages/index/apis/accelerometer'; // 搭配原生？
 
 import {
   Colors,
@@ -52,7 +59,7 @@ const Section = ({children, title}): Node => {
   );
 };
 
-const App: () => Node = () => {
+const App: () => Node = props => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -60,13 +67,16 @@ const App: () => Node = () => {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
+    <RootSiblingParent>
+      <TCNProvider {...props}>
+        <SafeAreaView style={backgroundStyle}>
+          <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+          <ScrollView
+            contentInsetAdjustmentBehavior="automatic"
+            style={backgroundStyle}>
+            <Header />
+            <RichText />
+            {/* <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
@@ -84,9 +94,11 @@ const App: () => Node = () => {
             Read the docs to discover what to do next:
           </Section>
           <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+        </View> */}
+          </ScrollView>
+        </SafeAreaView>
+      </TCNProvider>
+    </RootSiblingParent>
   );
 };
 
