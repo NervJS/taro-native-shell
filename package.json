@@ -10,8 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@tarojs/components-rn": "3.5.0-zeta.11",
-    "@tarojs/taro-rn": "3.5.0-zeta.11",
+    "@tarojs/components-rn": "3.4.12",
+    "@tarojs/taro-rn": "3.4.12",
     "expo": "^45.0.0",
     "react": "17.0.2",
     "react-native": "0.68.1"
