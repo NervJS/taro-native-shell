@@ -71,106 +71,106 @@ yarn upgradePeerdeps
 ```js
 {
   authorize: Set(3) {
-    'expo-camera@~12.2.0',
+    'expo-camera@~12.3.0',
     'expo-image-picker@~13.1.1',
-    'expo-location@~14.0.2'
+    'expo-location@~14.3.0'
   },
   chooseImage: Set(2) {
     'react-native-syan-image-picker@0.5.3',
-    'react-native-safe-area-context@~3.4.1'
+    'react-native-safe-area-context@~4.3.1'
   },
   chooseVideo: Set(4) {
     '@react-native-community/cameraroll@~4.1.2',
-    'expo-camera@~12.2.0',
+    'expo-camera@~12.3.0',
     'expo-image-picker@~13.1.1',
-    'react-native-safe-area-context@~3.4.1'
+    'react-native-safe-area-context@~4.3.1'
   },
-  clearStorage: Set(1) { '@react-native-async-storage/async-storage@~1.15.11' },
+  clearStorage: Set(1) { '@react-native-async-storage/async-storage@~1.17.7' },
   compressImage: Set(1) { 'react-native-image-resizer@~1.4.5' },
-  createCameraContext: Set(1) { 'expo-camera@~12.2.0' },
+  createCameraContext: Set(1) { 'expo-camera@~12.3.0' },
   createInnerAudioContext: Set(1) { 'expo-av@~11.2.3' },
-  downloadFile: Set(1) { 'expo-file-system@~14.0.0' },
+  downloadFile: Set(1) { 'expo-file-system@~14.1.0' },
   getClipboardData: Set(1) { '@react-native-community/clipboard@~1.5.1' },
-  getFileInfo: Set(1) { 'expo-file-system@~14.0.0' },
+  getFileInfo: Set(1) { 'expo-file-system@~14.1.0' },
   getLocation: Set(2) {
-    '@react-native-community/geolocation@~2.0.2',
-    'expo-location@~14.0.2'
+    '@react-native-community/geolocation@~2.1.0',
+    'expo-location@~14.3.0'
   },
-  getNetworkType: Set(1) { '@react-native-community/netinfo@~7.1.2' },
-  getRecorderManager: Set(2) { 'expo-av@~11.2.3', 'expo-file-system@~14.0.0' },
-  getSavedFileInfo: Set(1) { 'expo-file-system@~14.0.0' },
-  getSavedFileList: Set(1) { 'expo-file-system@~14.0.0' },
-  getScreenBrightness: Set(1) { 'expo-brightness@~10.2.0' },
+  getNetworkType: Set(1) { '@react-native-community/netinfo@~9.3.0' },
+  getRecorderManager: Set(2) { 'expo-av@~11.2.3', 'expo-file-system@~14.1.0' },
+  getSavedFileInfo: Set(1) { 'expo-file-system@~14.1.0' },
+  getSavedFileList: Set(1) { 'expo-file-system@~14.1.0' },
+  getScreenBrightness: Set(1) { 'expo-brightness@~10.3.0' },
   getSetting: Set(3) {
-    'expo-camera@~12.2.0',
+    'expo-camera@~12.3.0',
     'expo-image-picker@~13.1.1',
-    'expo-location@~14.0.2'
+    'expo-location@~14.3.0'
   },
-  getStorage: Set(1) { '@react-native-async-storage/async-storage@~1.15.11' },
-  getStorageInfo: Set(1) { '@react-native-async-storage/async-storage@~1.15.11' },
+  getStorage: Set(1) { '@react-native-async-storage/async-storage@~1.17.7' },
+  getStorageInfo: Set(1) { '@react-native-async-storage/async-storage@~1.17.7' },
   getSystemInfo: Set(2) {
-    'react-native-safe-area-context@~3.4.1',
-    'react-native-device-info@~8.4.8'
+    'react-native-safe-area-context@~4.3.1',
+    'react-native-device-info@~10.0.2'
   },
   getSystemInfoSync: Set(2) {
-    'react-native-safe-area-context@~3.4.1',
-    'react-native-device-info@~8.4.8'
+    'react-native-safe-area-context@~4.3.1',
+    'react-native-device-info@~10.0.2'
   },
-  offAccelerometerChange: Set(1) { 'expo-sensors@~11.2.0' },
-  offDeviceMotionChange: Set(1) { 'expo-sensors@~11.2.0' },
-  offGyroscopeChange: Set(1) { 'expo-sensors@~11.2.0' },
-  offLocationChange: Set(1) { '@react-native-community/geolocation@~2.0.2' },
-  offNetworkStatusChange: Set(1) { '@react-native-community/netinfo@~7.1.2' },
-  onAccelerometerChange: Set(1) { 'expo-sensors@~11.2.0' },
-  onDeviceMotionChange: Set(1) { 'expo-sensors@~11.2.0' },
-  onGyroscopeChange: Set(1) { 'expo-sensors@~11.2.0' },
-  onLocationChange: Set(1) { '@react-native-community/geolocation@~2.0.2' },
-  onNetworkStatusChange: Set(1) { '@react-native-community/netinfo@~7.1.2' },
+  offAccelerometerChange: Set(1) { 'expo-sensors@~11.4.0' },
+  offDeviceMotionChange: Set(1) { 'expo-sensors@~11.4.0' },
+  offGyroscopeChange: Set(1) { 'expo-sensors@~11.4.0' },
+  offLocationChange: Set(1) { '@react-native-community/geolocation@~2.1.0' },
+  offNetworkStatusChange: Set(1) { '@react-native-community/netinfo@~9.3.0' },
+  onAccelerometerChange: Set(1) { 'expo-sensors@~11.4.0' },
+  onDeviceMotionChange: Set(1) { 'expo-sensors@~11.4.0' },
+  onGyroscopeChange: Set(1) { 'expo-sensors@~11.4.0' },
+  onLocationChange: Set(1) { '@react-native-community/geolocation@~2.1.0' },
+  onNetworkStatusChange: Set(1) { '@react-native-community/netinfo@~9.3.0' },
   openSetting: Set(3) {
-    'expo-camera@~12.2.0',
+    'expo-camera@~12.3.0',
     'expo-image-picker@~13.1.1',
-    'expo-location@~14.0.2'
+    'expo-location@~14.3.0'
   },
   previewImage: Set(4) {
     '@react-native-community/cameraroll@~4.1.2',
-    'expo-camera@~12.2.0',
+    'expo-camera@~12.3.0',
     'expo-image-picker@~13.1.1',
-    'expo-file-system@~14.0.0'
+    'expo-file-system@~14.1.0'
   },
-  removeSavedFile: Set(1) { 'expo-file-system@~14.0.0' },
-  removeStorage: Set(1) { '@react-native-async-storage/async-storage@~1.15.11' },
-  saveFile: Set(1) { 'expo-file-system@~14.0.0' },
+  removeSavedFile: Set(1) { 'expo-file-system@~14.1.0' },
+  removeStorage: Set(1) { '@react-native-async-storage/async-storage@~1.17.7' },
+  saveFile: Set(1) { 'expo-file-system@~14.1.0' },
   saveImageToPhotosAlbum: Set(3) {
     '@react-native-community/cameraroll@~4.1.2',
-    'expo-camera@~12.2.0',
+    'expo-camera@~12.3.0',
     'expo-image-picker@~13.1.1'
   },
   saveVideoToPhotosAlbum: Set(3) {
     '@react-native-community/cameraroll@~4.1.2',
-    'expo-camera@~12.2.0',
+    'expo-camera@~12.3.0',
     'expo-image-picker@~13.1.1'
   },
   scanCode: Set(5) {
-    'react-native-safe-area-context@~3.4.1',
-    'expo-camera@~12.2.0',
-    'expo-barcode-scanner@~11.3.0',
+    'react-native-safe-area-context@~4.3.1',
+    'expo-camera@~12.3.0',
+    'expo-barcode-scanner@~11.4.0',
     '@react-native-community/cameraroll@~4.1.2',
     'expo-image-picker@~13.1.1'
   },
   setClipboardData: Set(1) { '@react-native-community/clipboard@~1.5.1' },
-  setKeepScreenOn: Set(1) { 'expo-keep-awake@~10.1.1' },
-  setScreenBrightness: Set(1) { 'expo-brightness@~10.2.0' },
-  setStorage: Set(1) { '@react-native-async-storage/async-storage@~1.15.11' },
-  showActionSheet: Set(1) { 'react-native-safe-area-context@~3.4.1' },
-  startAccelerometer: Set(1) { 'expo-sensors@~11.2.0' },
-  startDeviceMotionListening: Set(1) { 'expo-sensors@~11.2.0' },
-  startGyroscope: Set(1) { 'expo-sensors@~11.2.0' },
-  startLocationUpdate: Set(1) { '@react-native-community/geolocation@~2.0.2' },
-  stopAccelerometer: Set(1) { 'expo-sensors@~11.2.0' },
-  stopDeviceMotionListening: Set(1) { 'expo-sensors@~11.2.0' },
-  stopGyroscope: Set(1) { 'expo-sensors@~11.2.0' },
-  stopLocationUpdate: Set(1) { '@react-native-community/geolocation@~2.0.2' },
-  uploadFile: Set(1) { 'expo-file-system@~14.0.0' }
+  setKeepScreenOn: Set(1) { 'expo-keep-awake@~10.2.0' },
+  setScreenBrightness: Set(1) { 'expo-brightness@~10.3.0' },
+  setStorage: Set(1) { '@react-native-async-storage/async-storage@~1.17.7' },
+  showActionSheet: Set(1) { 'react-native-safe-area-context@~4.3.1' },
+  startAccelerometer: Set(1) { 'expo-sensors@~11.4.0' },
+  startDeviceMotionListening: Set(1) { 'expo-sensors@~11.4.0' },
+  startGyroscope: Set(1) { 'expo-sensors@~11.4.0' },
+  startLocationUpdate: Set(1) { '@react-native-community/geolocation@~2.1.0' },
+  stopAccelerometer: Set(1) { 'expo-sensors@~11.4.0' },
+  stopDeviceMotionListening: Set(1) { 'expo-sensors@~11.4.0' },
+  stopGyroscope: Set(1) { 'expo-sensors@~11.4.0' },
+  stopLocationUpdate: Set(1) { '@react-native-community/geolocation@~2.1.0' },
+  uploadFile: Set(1) { 'expo-file-system@~14.1.0' }
 }
 ```
 
@@ -179,22 +179,22 @@ yarn upgradePeerdeps
 ```js
 {
   Camera: Set(3) {
-    'expo@~45.0.2',
-    'expo-camera@~12.2.0',
-    'expo-barcode-scanner@~11.3.0'
+    'expo@~46.0.1',
+    'expo-camera@~12.3.0',
+    'expo-barcode-scanner@~11.4.0'
   },
-  Image: Set(1) { 'react-native-svg@~12.1.1' },
-  Picker: Set(1) { '@react-native-picker/picker@~2.2.1' },
-  PickerView: Set(1) { '@react-native-picker/picker@~2.2.1' },
-  RichText: Set(1) { 'react-native-webview@~11.14.3' },
-  Slider: Set(1) { '@react-native-community/slider@~4.1.12' },
-  Swiper: Set(1) { 'react-native-pager-view@~5.4.9' },
+  Image: Set(1) { 'react-native-svg@~12.4.3' },
+  Picker: Set(1) { '@react-native-picker/picker@~2.4.2' },
+  PickerView: Set(1) { '@react-native-picker/picker@~2.4.2' },
+  RichText: Set(1) { 'react-native-webview@~11.23.0' },
+  Slider: Set(1) { '@react-native-community/slider@~4.2.4' },
+  Swiper: Set(1) { 'react-native-pager-view@~5.4.25' },
   Video: Set(3) {
-    'expo@~45.0.2',
+    'expo@~46.0.1',
     'expo-av@~11.2.3',
-    'react-native-svg@~12.1.1'
+    'react-native-svg@~12.4.3'
   },
-  CoverImage: Set(1) { 'react-native-svg@~12.1.1' },
-  WebView: Set(1) { 'react-native-webview@~11.14.3' }
+  CoverImage: Set(1) { 'react-native-svg@~12.4.3' },
+  WebView: Set(1) { 'react-native-webview@~11.23.0' }
 }
 ```
