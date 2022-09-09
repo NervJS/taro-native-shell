@@ -19,7 +19,7 @@
     "@react-native-community/slider": "~4.2.4",
     "@react-native-masked-view/masked-view": "~0.2.7",
     "@react-native-picker/picker": "~2.4.2",
-    "expo": "~46.0.1",
+    "expo": "~46.0.10",
     "expo-av": "~12.0.3",
     "expo-barcode-scanner": "~11.4.0",
     "expo-brightness": "~10.3.0",
@@ -28,11 +28,11 @@
     "expo-image-picker": "~13.1.1",
     "expo-keep-awake": "~10.2.0",
     "expo-location": "~14.3.0",
-    "expo-modules-core": "~0.11.3",
+    "expo-modules-core": "~0.11.5",
     "expo-permissions": "~13.2.0",
     "expo-sensors": "~11.4.0",
-    "react": "18.0.0",
-    "react-native": "^0.69.5",
+    "react": "18.1.0",
+    "react-native": "^0.70.0",
     "react-native-device-info": "~10.0.2",
     "react-native-gesture-handler": "~2.5.0",
     "react-native-image-resizer": "~1.4.5",
@@ -51,9 +51,9 @@
     "eslint": "^7.32.0",
     "install-peerdeps": "^3.0.3",
     "jest": "^26.6.3",
-    "metro-react-native-babel-preset": "^0.70.3",
+    "metro-react-native-babel-preset": "^0.72.1",
     "pod-install": "^0.1.35",
-    "react-test-renderer": "18.2.0"
+    "react-test-renderer": "18.1.0"
   },
   "jest": {
     "preset": "react-native"
