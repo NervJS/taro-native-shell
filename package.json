@@ -7,7 +7,7 @@
     "ios": "react-native run-ios --no-packager",
     "start": "react-native start",
     "test": "jest",
-    "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn@3.5.7-alpha.7 -o -Y && install-peerdeps @tarojs/components-rn@3.5.7-alpha.7 -o -Y && install-peerdeps @tarojs/router-rn@3.5.7-alpha.7 -o -Y && pod-install",
+    "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn@3.5.7-alpha.8 -o -Y && install-peerdeps @tarojs/components-rn@3.5.7-alpha.8 -o -Y && install-peerdeps @tarojs/router-rn@3.5.7-alpha.8 -o -Y && pod-install",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -19,7 +19,7 @@
     "@react-native-community/slider": "~4.3.2",
     "@react-native-masked-view/masked-view": "~0.2.7",
     "@react-native-picker/picker": "~2.4.2",
-    "expo": "~47.0.1",
+    "expo": "~47.0.3",
     "expo-av": "~13.0.0",
     "expo-barcode-scanner": "~12.0.0",
     "expo-brightness": "~11.0.0",
@@ -28,7 +28,7 @@
     "expo-image-picker": "~14.0.0",
     "expo-keep-awake": "~11.0.1",
     "expo-location": "~15.0.1",
-    "expo-modules-core": "~0.13.2",
+    "expo-modules-core": "~1.0.2",
     "expo-permissions": "~13.2.0",
     "expo-sensors": "~12.0.1",
     "react": "18.1.0",
