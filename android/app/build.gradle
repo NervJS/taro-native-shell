@@ -95,7 +95,7 @@ android {
 
     namespace "com.tarodemo"
     defaultConfig {
-        applicationId "com.tarodemo"
+        applicationId app_id
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
