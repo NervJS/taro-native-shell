@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn -o -Y && install-peerdeps @tarojs/components-rn -o -Y && install-peerdeps @tarojs/router-rn -o -Y && pod-install"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -26,7 +27,9 @@
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
     "eslint": "^8.19.0",
+    "install-peerdeps": "^3.0.3",
     "jest": "^29.6.3",
+    "pod-install": "^0.1.38",
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",
     "typescript": "5.0.4"

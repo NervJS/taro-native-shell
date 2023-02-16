@@ -1,79 +1,55 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Taro Native Shell
 
-# Getting Started
+参考文档：[Taro React Native 端开发流程 - 分离模式](https://docs.taro.zone/docs/react-native#%E5%88%86%E7%A6%BB%E6%A8%A1%E5%BC%8F)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Taro 原生 React Native 壳工程，和 React Native init 的工程的区别如下：
 
-## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+0. 集成了 [expo](https://docs.expo.dev/bare/installing-expo-modules/)
+1. 集成了 Taro 依赖的所有原生库
+2. debug 方式变更: 在 JS 工程中 `yarn dev:rn` 启动 metro server
+3. release 方式变更: 在 JS 工程中 `yarn buid:rn` 打包 jsbundle 并通过配置 `rn.output` 输出到壳工程
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 该仓库如何生成
 
-```bash
-# using npm
-npm start
+1. 使用 `react-native` [初始化项目](https://reactnative.dev/docs/environment-setup)
 
-# OR using Yarn
-yarn start
+```
+npx react-native init taroDemo --version 0.73.0
 ```
 
-## Step 2: Start your Application
+2. 使用 `expo-cli` [自动安装 expo](https://docs.expo.dev/bare/installing-expo-modules/#automatic-installation)
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```
+npx install-expo-modules@latest
 ```
 
-### For iOS
+3. 修改部分代码以支持 Taro，此部分可以直接 cherry-pick
+   - [scripts] 修改 `android`, `ios` 脚本，增加 `upgradePeerdeps` 脚本
+   - [devDependencies] 增加 `install-peerdeps` 和 `pod-install`
+   - [ios] 添加相关 APP 权限说明
+   - [ios] 使用亮色主题
+   - [android] 添加国内 maven 源
+   - [android] 添加 gif 支持
+   - [android] 注释原 react native 打包
+   - [android] 使用亮色主题
+   - [docs] 复制该 `README.md` 文件
+   - [license] 复制 LICENSE 文件
 
-```bash
-# using npm
-npm run ios
+4. 更新 Taro 需要的依赖（如果还没正式发布，则使用对应的 alpha 或 beta 版本）
 
-# OR using Yarn
-yarn ios
+```
+yarn
+yarn upgradePeerdeps
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## React Native 小版本更新
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+https://react-native-community.github.io/upgrade-helper/
 
-## Step 3: Modifying your App
+## Taro 版本更新
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+> 使用 Taro 最新版，或者修改 `upgradePeerdeps` 指定 Taro 版本，再执行：
+```
+yarn upgradePeerdeps
+```

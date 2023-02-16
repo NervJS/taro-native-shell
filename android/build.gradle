@@ -8,6 +8,9 @@ buildscript {
         kotlinVersion = "1.8.0"
     }
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
         google()
         mavenCentral()
     }
@@ -18,4 +21,12 @@ buildscript {
     }
 }
 
+allprojects {
+    repositories {
+        maven {
+            // expo-camera bundles a custom com.google.android:cameraview
+            url "$rootDir/../node_modules/expo-camera/android/maven"
+        }
+    }
+}
 apply plugin: "com.facebook.react.rootproject"
