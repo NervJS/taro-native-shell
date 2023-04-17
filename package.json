@@ -96,6 +96,7 @@
     "@tarojs/rn-runner": "3.6.5-canary.1",
     "@tarojs/webpack5-runner": "3.6.5-canary.1",
     "@tsconfig/react-native": "^2.0.2",
+    "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",
     "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
