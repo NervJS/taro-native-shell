@@ -1187,15 +1187,7 @@ PODS:
     - React-Core
   - RNSVG (14.1.0):
     - React-Core
-  - RNSyanImagePicker (0.5.3):
-    - React
-    - TZImagePickerController
   - SocketRocket (0.6.1)
-  - TZImagePickerController (3.8.4):
-    - TZImagePickerController/Basic (= 3.8.4)
-    - TZImagePickerController/Location (= 3.8.4)
-  - TZImagePickerController/Basic (3.8.4)
-  - TZImagePickerController/Location (3.8.4)
   - Yoga (1.14.0)
   - ZXingObjC/Core (3.6.9)
   - ZXingObjC/OneD (3.6.9):
@@ -1306,7 +1298,6 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
-  - RNSyanImagePicker (from `../node_modules/react-native-syan-image-picker`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1324,7 +1315,6 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
-    - TZImagePickerController
     - ZXingObjC
 
 EXTERNAL SOURCES:
@@ -1483,8 +1473,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   RNSVG:
     :path: "../node_modules/react-native-svg"
-  RNSyanImagePicker:
-    :path: "../node_modules/react-native-syan-image-picker"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1578,9 +1566,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: 61bfdfc05db9b79dd61f894dcd29d3dcc6db3c02
   RNScreens: b582cb834dc4133307562e930e8fa914b8c04ef2
   RNSVG: ba3e7232f45e34b7b47e74472386cf4e1a676d0a
-  RNSyanImagePicker: 5c650d33f16f7cd59c47d9269f6c4856b30d7616
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  TZImagePickerController: f1c9f1cae6ac0e30b31aaa9698f9bf4a7cf5b84f
   Yoga: 44003f970aa541b79dfdd59cf236fda41bd5890f
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
 
