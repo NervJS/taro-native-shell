@@ -1531,10 +1531,10 @@
     mv "~2"
     safe-json-stringify "~1"
 
-"@expo/cli@0.16.1":
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.16.1.tgz#a264752bf1fea94103e96f9458149082561e02fe"
-  integrity sha512-rKBvwRO9KqzSqQd2TTvMF5NWUHx9g4BWDRJdQ7RkTxRmAHCfRwg8muC5pemrwJgNG/Q27Ya6yzNA9YhauyFloQ==
+"@expo/cli@0.16.2":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.16.2.tgz#b0abf98f0386a022986c2307ae1f8f9f989260e2"
+  integrity sha512-QcE/ZKg5ZaPSe7PxGrWQvlMGXOodzEqeqWUea3aX1ZMRsEdvVDF5n20to2GPn6PMI0PllDy/iMPyAlBlXvFYqA==
   dependencies:
     "@babel/runtime" "^7.20.0"
     "@expo/code-signing-certificates" "0.0.5"
@@ -1543,7 +1543,7 @@
     "@expo/devcert" "^1.0.0"
     "@expo/env" "~0.2.0"
     "@expo/json-file" "^8.2.37"
-    "@expo/metro-config" "~0.16.0"
+    "@expo/metro-config" "~0.16.1"
     "@expo/osascript" "^2.0.31"
     "@expo/package-manager" "^1.1.1"
     "@expo/plist" "^0.1.0"
@@ -1737,10 +1737,10 @@
     json5 "^2.2.2"
     write-file-atomic "^2.3.0"
 
-"@expo/metro-config@0.16.0", "@expo/metro-config@~0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@expo/metro-config/-/metro-config-0.16.0.tgz#0bc15ad10b3e5d511e2ae6868bbd1c39536922fd"
-  integrity sha512-qj6Qk5NkBVqn7YO9/jl36Qa+CczwgCEaFlNzg3av6fH90rtPAko0y/KglBsU0mKc6t6EiqyZ/ls1YkNkjNksEw==
+"@expo/metro-config@0.16.1", "@expo/metro-config@~0.16.1":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@expo/metro-config/-/metro-config-0.16.1.tgz#5fc41842e5e9fb0893a4227d2aeb0c2232131d05"
+  integrity sha512-YIf4E/pqn8D0/LCj17hcOGAqwY/CU56IBB1PrvXIFw37DcMF315X+NRBbZ9ttKpyEN1WhFUgOyb0PPtvLjcy+g==
   dependencies:
     "@babel/core" "^7.20.0"
     "@babel/generator" "~7.20.5"
@@ -4794,10 +4794,10 @@ expect@^29.7.0:
     jest-message-util "^29.7.0"
     jest-util "^29.7.0"
 
-expo-asset@~9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-9.0.0.tgz#1e1e82ceb4159c224e6691a7c20f971269f05bc0"
-  integrity sha512-/m5h9ThdImo7qZHa7rGRPHilkFByMMyvbr/ydMlW5GP3GdJXNsJN9iNsUZb6qQc4X2xkaYgv93jemNNP3csmPA==
+expo-asset@~9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-9.0.1.tgz#85f3affa263a97d012d585819e742218bdb967c6"
+  integrity sha512-hoCzQ8ga6ZOmkwABQeAIStXmshpK+1oNpGNNeJCJ1QdoU6hlCu6DKnikreLZYr6FQzaQTS3yel86zuRQtwNpaQ==
   dependencies:
     "@react-native/assets-registry" "~0.73.1"
     blueimp-md5 "^2.10.0"
@@ -4844,6 +4844,11 @@ expo-file-system@~16.0.0:
   integrity sha512-qBy88YxyNMO8CSrbio05wrLbTX8pTEh7eo4gCGQQ6+PC/rr0iVAwcCiPFCEQUxxKi8rt9GEMzMha10xQr76PlA==
   dependencies:
     uuid "^3.4.0"
+
+expo-file-system@~16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/expo-file-system/-/expo-file-system-16.0.1.tgz#326b7c2f6e53e1a0eaafc9769578aafb3f9c9f43"
+  integrity sha512-/U6ufN2wRPgg4m2a9sqbL3dThqQsysT022qulEXWnUTmNaqnzYSk9ihjDWqoqjXLi9slQLsyok5t6CNzhM7HPw==
 
 expo-font@~11.10.0:
   version "11.10.0"
@@ -4900,20 +4905,20 @@ expo-sensors@~12.9.0:
   dependencies:
     invariant "^2.2.4"
 
-expo@~50.0.0-preview.1:
-  version "50.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-50.0.0-preview.1.tgz#5998e496552923230e3e83fb0b20ae35da6abf54"
-  integrity sha512-zeNYUIPCKyQ+8mYZ5d6MWsfv8ZpGRX+hGwthUtGJcRXZu0ZIwqas2U/0uWjr5QTRRC+5XKQRXQaQvZRgok81Gw==
+expo@50.0.0-preview.3:
+  version "50.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-50.0.0-preview.3.tgz#c19d9bec48bfe4fe65fc9c8dd214e168dc17d07d"
+  integrity sha512-hFDRAYMnZoU9Km9CgLxa2iqARHY4ttA2uAMkTIAtZz6gdHPGKnthr4zKs3dhETUyPowQqSI7xHe8NcLgQ+Jlqg==
   dependencies:
     "@babel/runtime" "^7.20.0"
-    "@expo/cli" "0.16.1"
+    "@expo/cli" "0.16.2"
     "@expo/config" "8.5.0"
     "@expo/config-plugins" "7.8.0"
-    "@expo/metro-config" "0.16.0"
+    "@expo/metro-config" "0.16.1"
     "@expo/vector-icons" "^13.0.0"
     babel-preset-expo "~10.0.0"
-    expo-asset "~9.0.0"
-    expo-file-system "~16.0.0"
+    expo-asset "~9.0.1"
+    expo-file-system "~16.0.1"
     expo-font "~11.10.0"
     expo-keep-awake "~12.8.0"
     expo-modules-autolinking "1.9.0"
