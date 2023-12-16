@@ -15,8 +15,9 @@ import {
   Text,
   useColorScheme,
   View,
+  NativeModules,
 } from 'react-native';
-
+console.log(NativeModules.NativeUnimoduleProxy);
 import {
   Colors,
   DebugInstructions,
