@@ -15,9 +15,9 @@ import {
   Text,
   useColorScheme,
   View,
-  NativeModules,
 } from 'react-native';
-console.log(NativeModules.NativeUnimoduleProxy);
+import { getCurrentPositionAsync } from 'expo-location'
+getCurrentPositionAsync({}).then(console.log);
 import {
   Colors,
   DebugInstructions,
