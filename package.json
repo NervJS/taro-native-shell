@@ -93,6 +93,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
+    "@react-native/metro-config": "^0.73.2",
     "@react-native/typescript-config": "^0.73.1",
     "@tarojs/cli": "4.0.0-canary.2",
     "@tarojs/rn-runner": "4.0.0-canary.2",
