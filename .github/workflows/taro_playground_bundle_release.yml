@@ -1,0 +1,35 @@
+# action for bundle taro react native project
+# remove this file if you don't need it
+# see https://github.com/zhiqingchen/taro-react-native-release for details.
+
+on:
+  push:
+    tags: [ b* ]
+  workflow_dispatch:
+
+jobs:
+  taro_release_job:
+    runs-on: ubuntu-latest
+    name: Taro Bundle Release
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - run: pnpm install
+      - name: Release Taro React Native bundle
+        uses: zhiqingchen/taro-react-native-release@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Qr Image
+        uses: actions/upload-artifact@v2
+        with:
+          name: bundle-qr-code
+          path: |
+            release/qrcode/ios.png
+            release/qrcode/android.png

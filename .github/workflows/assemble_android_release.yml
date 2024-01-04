@@ -1,0 +1,85 @@
+# 工作流名称
+name: Assemble Android Release
+
+# 触发工作流程的事件
+on:
+  push:
+    branches: [ master ]
+    tags: [ v* ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+# 工作流环境变量
+env:
+  # 应用的application_id
+  APP_ID: com.tarodemo
+  # 应用名称
+  APP_NAME: Taro Demo
+  # 打包类型
+  BUILD_TYPE: release
+  # 版本名称
+  VERSION_NAME: 1.0.0
+  # 版本号
+  VERSION_CODE: 10
+  # 密钥库文件
+  KEYSTORE_FILE: debug.keystore
+  # 密钥库口令
+  KEYSTORE_PASSWORD: android
+  # 密钥库别名
+  KEYSTORE_KEY_ALIAS: androiddebugkey
+  # 密钥库别名口令
+  KEYSTORE_KEY_PASSWORD: android
+
+# 工作流作业
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - run: pnpm install
+      - name: Cache Gradle
+        uses: actions/cache@v2
+        env:
+          cache-name: gradle-cache
+        with:
+          path: ~/.gradle
+          key: ${{ runner.os }}-gradle
+          restore-keys: |
+            ${{ runner.os }}-gradle
+      - name: Assemble Android ${{ env.BUILD_TYPE }}
+        run: |
+          sudo apt install -y ruby-bundler
+          cd android
+          bundle update
+          bundle exec fastlane assemble
+        env:
+          KEYSTORE_FILE: ${{ github.workspace }}/android/app/${{ env.KEYSTORE_FILE }}
+      - name: Upload Android Products
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-${{ env.BUILD_TYPE }}
+          path: ${{ github.workspace }}/android/app/build/outputs/apk/${{ env.BUILD_TYPE }}/app-${{ env.BUILD_TYPE }}.apk
+          NODE_PATH: ${{ github.workspace }}/node_modules/.pnpm/node_modules:$NODE_PATH
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          prerelease: ${{ contains(github.ref, 'beta') }}
+          files: |
+            android/app/build/outputs/apk/${{ env.BUILD_TYPE }}/app-${{ env.BUILD_TYPE }}.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
