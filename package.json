@@ -77,7 +77,8 @@
     "react-native-safe-area-context": "~4.8.0",
     "react-native-screens": "^3.29.0",
     "react-native-svg": "~14.1.0",
-    "react-native-webview": "~13.6.3"
+    "react-native-webview": "~13.6.3",
+    "tsconfig-paths-webpack-plugin": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
