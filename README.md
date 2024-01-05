@@ -7,8 +7,8 @@ Taro 原生 React Native 壳工程，和 React Native init 的工程的区别如
 
 0. 集成了 [expo](https://docs.expo.dev/bare/installing-expo-modules/)
 1. 集成了 Taro 依赖的所有原生库
-2. debug 方式变更: 在 JS 工程中 `yarn dev:rn` 启动 metro server
-3. release 方式变更: 在 JS 工程中 `yarn buid:rn` 打包 jsbundle 并通过配置 `rn.output` 输出到壳工程
+2. debug 方式变更: 在 JS 工程中 `pnpm dev:rn` 启动 metro server
+3. release 方式变更: 在 JS 工程中 `pnpm buid:rn` 打包 jsbundle 并通过配置 `rn.output` 输出到壳工程
 
 ## 该仓库如何生成
 
@@ -39,8 +39,8 @@ npx install-expo-modules@latest
 4. 更新 Taro 需要的依赖（如果还没正式发布，则使用对应的 alpha 或 beta 版本）
 
 ```
-yarn
-yarn upgradePeerdeps
+pnpm
+pnpm upgradePeerdeps
 ```
 
 5. 添加打包脚本，此部分可以直接 cherry-pick
@@ -58,5 +58,5 @@ https://react-native-community.github.io/upgrade-helper/
 
 > 使用 Taro 最新版，或者修改 `upgradePeerdeps` 指定 Taro 版本，再执行：
 ```
-yarn upgradePeerdeps
+pnpm upgradePeerdeps
 ```

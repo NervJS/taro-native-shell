@@ -8,18 +8,20 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn -o -Y && install-peerdeps @tarojs/components-rn -o -Y && install-peerdeps @tarojs/router-rn -o -Y && pod-install"
+    "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn -o -P && install-peerdeps @tarojs/components-rn -o -P && install-peerdeps @tarojs/router-rn -o -P && pod-install"
   },
   "dependencies": {
     "@bam.tech/react-native-image-resizer": "~3.0.5",
     "@react-native-async-storage/async-storage": "~1.21.0",
     "@react-native-camera-roll/camera-roll": "~7.2.0",
     "@react-native-clipboard/clipboard": "~1.13.0",
+    "@react-native-community/cli-platform-android": "^13.2.0",
     "@react-native-community/geolocation": "~3.1.0",
     "@react-native-community/netinfo": "~11.2.0",
     "@react-native-community/slider": "~4.4.2",
     "@react-native-masked-view/masked-view": "~0.3.1",
     "@react-native-picker/picker": "~2.6.1",
+    "@react-native/gradle-plugin": "^0.73.4",
     "expo": "~50.0.0-preview.4",
     "expo-av": "~13.10.0",
     "expo-barcode-scanner": "~12.9.0",
