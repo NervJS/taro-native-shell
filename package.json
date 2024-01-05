@@ -48,6 +48,7 @@
     "@react-native-picker/picker": "~2.6.1",
     "@react-native/gradle-plugin": "^0.73.0",
     "@tarojs/components": "4.0.0-canary.6",
+    "@tarojs/components-rn": "4.0.0-canary.6",
     "@tarojs/helper": "4.0.0-canary.6",
     "@tarojs/plugin-framework-react": "4.0.0-canary.6",
     "@tarojs/plugin-platform-alipay": "4.0.0-canary.6",
