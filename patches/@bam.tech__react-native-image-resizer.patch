@@ -1,0 +1,32 @@
+diff --git a/package.json b/package.json
+index 7a73b6e0d42d5eacd9d9d15017d019ed67a09a0a..2033e591e1b7239b78541d6f6e3e4e4aab119d1e 100644
+--- a/package.json
++++ b/package.json
+@@ -169,12 +169,8 @@
+     ]
+   },
+   "codegenConfig": {
+-    "libraries": [
+-      {
+-        "name": "RNImageResizerSpec",
+-        "type": "modules",
+-        "jsSrcsDir": "src"
+-      }
+-    ]
++    "name": "RNImageResizerSpec",
++    "type": "modules",
++    "jsSrcsDir": "src"
+   }
+ }
+diff --git a/react-native-image-resizer.podspec b/react-native-image-resizer.podspec
+index c7ba7d9e261abbb890cccf0c9dd58eba118083be..749803239f7765994408d525e3cf7cff787e847a 100644
+--- a/react-native-image-resizer.podspec
++++ b/react-native-image-resizer.podspec
+@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
+     s.dependency "RCTRequired"
+     s.dependency "RCTTypeSafety"
+     s.dependency "ReactCommon/turbomodule/core"
++    install_modules_dependencies(s)
+   end
+ end
+ 
